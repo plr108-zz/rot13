@@ -10,4 +10,4 @@ libraries:
 
 handlers:
 - url: /.*
-  script: templates.app
+  script: rot13.app

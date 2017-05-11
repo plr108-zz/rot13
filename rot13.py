@@ -22,7 +22,7 @@ class Handler(webapp2.RequestHandler):
 class MainPage(Handler):
     def get(self):
         text = self.request.get_all('text')
-        self.render('base.html', text=text)
+        self.render('rot13.html', text=text)
 
     def post(self):
         text = self.request.get_all('text')
