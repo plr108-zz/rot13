@@ -24,6 +24,10 @@ class MainPage(Handler):
         text = self.request.get_all('text')
         self.render('base.html', text=text)
 
+    def post(self):
+        text = self.request.get_all('text')
+        self.response.out.write('Thanks for clicking')
+
 
 app = webapp2.WSGIApplication([('/', MainPage),
                                ],
